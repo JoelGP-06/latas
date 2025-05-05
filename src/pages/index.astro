@@ -1,0 +1,252 @@
+---
+
+import Layout from "../layouts/Layout.astro";
+
+
+
+
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+<Layout>
+  <!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+      <title>TITAN-FLOW</title>
+  </head>
+  
+  <body>
+      <img src="/src/assets/logo.png" alt="TITAN-FLOW LOGO" class="logo">
+  
+      <nav>
+          <a href="#">HOME</a>
+          <a href="#">BEST SELLERS</a>
+          <a href="#">INCOMING PRODUCTS</a>
+      </nav>
+      <h1>#TITAN-FLOWONTOP</h1>
+      <h2>THE BEST ENERGY DRINK FOR CULTURISTS</h2>
+      <div class="titan-flow-container">
+  
+          <div class="can-container">
+              <a href="#"><img src="/src/assets/tf-original.avif" alt="titan flow original can" class="original"></a>
+              <p class="texto">ORIGINAL</p>
+          </div>
+          <div class="can-container">
+              <a href="#"><img src="/src/assets/tf-white.avif" alt="titan flow white can" class="white"></a>
+              <p class="texto-white">WHITE</p>
+          </div>
+  
+          <div class="can-container">
+              <a href="#"><img src="/src/assets/tf-lime.avif" alt="titan flow lime can" class="lime"></a>
+              <p class="texto-original">LIME</p>
+          </div>
+  
+          <div class="can-container">
+              <a href="#"><img src="/src/assets/tf-venom.avif" alt="titan flow venom can" class="venom"></a>
+              <p class="texto-original">VENOM</p>
+          </div>
+  
+          <div class="can-container">
+              <a href="#"><img src="/src/assets/tf-max.avif" alt="titan flow max can" class="max"></a>
+              <p class="texto-original">MAX</p>
+          </div>
+  
+          <div class="can-container">
+              <a href="#"><img src="/src/assets/tf-gold.avif" alt="titan flow gold can" class="gold"></a>
+              <p class="texto-original">GOLD</p>
+          </div>
+  
+      </div>
+  
+  </body>
+  <style>
+      body {
+          background-color: #222321;
+          font-family: "Impact", sans-serif;
+          letter-spacing: 5px;
+          color: #fff;
+          text-align: center;
+      }
+      
+      .logo {
+          display: flex;
+          margin-left: 240px;
+          height: 100px;
+      }
+      
+      nav {
+          margin-top: -60px;
+          margin-bottom: 100px;
+          margin-left: 50px;
+      }
+      
+      nav a {
+          margin: 0 15px;
+          color: #fff;
+          font-family: "Impact", sans-serif;
+          letter-spacing: 1px;
+          text-decoration: none;
+      }
+      
+      nav a:hover {
+          text-decoration: underline;
+      }
+      
+      .titan-flow-container {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 20px;
+      }
+      
+      .titan-flow-container a {
+          margin: 10px;
+      }
+      
+      .can-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+      }
+      
+      .texto-original {
+          display: flex;
+          color: #fff;
+          margin-left: 5px;
+          margin-top: 10px;
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+      }
+      
+      .texto {
+          margin-left: 15px;
+          margin-top: -1px;
+          color: #fff;
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+      }
+      
+      .texto-white {
+          margin-top: -1px;
+          color: #fff;
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+      }
+      
+      .can-container:hover .texto-original {
+          opacity: 1;
+      }
+      
+      .can-container:hover .texto {
+          opacity: 1;
+      }
+      
+      .can-container:hover .texto-white {
+          opacity: 1;
+      }
+      
+      .original:hover {
+          animation: pulse 2s infinite;
+      }
+      
+      .white:hover {
+          animation: pulse 2s infinite;
+      }
+      
+      .lime:hover {
+          animation: pulse 2s infinite;
+      }
+      
+      .max:hover {
+          animation: pulse 2s infinite;
+      }
+      
+      .venom:hover {
+          animation: pulse 2s infinite;
+      }
+      
+      .gold:hover {
+          animation: pulse 2s infinite;
+      }
+      
+      .lime {
+          margin-top: 14px;
+          height: 245px;
+          max-width: 105px;
+      }
+      
+      .max {
+          margin-top: 14px;
+          height: 245px;
+          max-width: 105px;
+      }
+      
+      .venom {
+          margin-top: 14px;
+          height: 245px;
+          max-width: 105px;
+      }
+      
+      .gold {
+          margin-top: 14px;
+          height: 245px;
+          max-width: 105px;
+      }
+      
+      @media (max-width: 1200px) {
+          .logo {
+              display: none;
+          }
+      }
+      
+      @media (max-width: 992px) {
+          .logo {
+              display: none;
+          }
+      }
+      
+      @media (max-width: 768px) {
+          body {
+              letter-spacing: 3px;
+          }
+          .logo {
+              display: none;
+          }
+          nav a {
+              font-size: 14px;
+          }
+          .titan-flow-container img {
+              height: 150px;
+              max-width: 80px;
+          }
+      }
+      
+      @media (max-width: 480px) {
+          body {
+              letter-spacing: 2px;
+          }
+          .logo {
+              display: none;
+          }
+          nav a {
+              font-size: 12px;
+              margin: 0 5px;
+          }
+          .titan-flow-container {
+              gap: 10px;
+          }
+          .titan-flow-container img {
+              height: 120px;
+              max-width: 60px;
+          }
+      }
+  </style>
+</Layout>
+<style>
+</style>
